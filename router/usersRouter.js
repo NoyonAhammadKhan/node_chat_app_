@@ -12,6 +12,8 @@ const { addUserValidators, addUserValidationHandler } = require('../middlewares/
 router.get("/",decorateHtmlResponse("Users"),getUsers);
 
 
+
+
 //add users
 
 router.post("/",avatarUpload,addUserValidators,addUserValidationHandler,addUser);
